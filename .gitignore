@@ -111,3 +111,5 @@ timer.dat
 
 _bmark_cache.npz
 tests/tmp/
+
+.DS_Store
