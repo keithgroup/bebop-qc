@@ -18,17 +18,17 @@ Currently, we have developed BEBOP-1 and BEBOP-2 models, and each of these model
 
 ##### BEBOP-1:
 
-    `# Opt B3LYP/CBSB7`
+    # Opt B3LYP/CBSB7
 
 ##### BEBOP-2:
 
-    `# Opt B3LYP/cc-pVTZ+1d`
+    # Opt B3LYP/cc-pVTZ+1d
 
 2. Run Hartree-Fock on the optimized structure in Gaussian.
 
 ##### BEBOP-1 and BEBOP-2:
 
-    `# SP ROHF/CBSB3 Pop=(Full) IOp(6/27=122,6/12=3)`
+    # SP ROHF/CBSB3 Pop=(Full) IOp(6/27=122,6/12=3)
 
 ## Usage
 
