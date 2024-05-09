@@ -17,3 +17,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Created ``bebop2_examples`` containing BEBOP-2 examples
 - Modify bebop-qc version from 1.0.0 to 2.0.0
 - Change README.md file to include information on BEBOP-1 and BEBOP-2 usages and citations 
+
+## [2.0.0] - 2024-05-09
+-Modified line 382 of ``bebop2/read_output.py`` from ``p = ROHF.readlines()[93:]`` to ``p = ROHF.readlines()``
