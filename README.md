@@ -43,7 +43,7 @@ bebop1 -f {name_file} --be --sort --json > {name_file}.bop
 ##### BEBOP-2
 
 ```bash
-bebop2 -f {name_file} -parameter_folder {parameter_folder} --be --sort --json --ionicity > {name_file}.bop
+bebop2 -f {name_file} -param_folder {parameter_folder} --be --sort --json --ionicity > {name_file}.bop
 ```
 
 where `{name_file}` is the Hartree-Fock Gaussian output file and `{parameter_folder}` is the name or path of the BEBOP-2 parameter folder. Note that BEBOP-2 parameters are stored in json files under the `opt_parameters` folders.
