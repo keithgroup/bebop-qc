@@ -202,9 +202,14 @@ def conditional_statements(pair_atoms, bo_sig_pair, bo_pi_pair):
     bond_pairs_1 = np.array(['O~O','N~N','O~N','N~O','C~C','O~C','C~O','C~N','N~C','B~B','B~O','O~B','C~B','B~C'])
     bond_pairs_2 = np.array(['Li~Li'])
     if (f'{pair_atoms[0]}~{pair_atoms[1]}' in bond_pairs_1) and (bo_sig_pair > 0 and 0 > bo_pi_pair):
-        corrections = 0
+        if (np.abs(bo_pi_pair) > np.abs(bo_sig_pair)):
+            corrections = 2
+        else:
+            corrections = 0
     elif (f'{pair_atoms[0]}~{pair_atoms[1]}' in bond_pairs_2) and (bo_pi_pair > 0):
         corrections = 1
+    elif (f'{pair_atoms[0]}~{pair_atoms[1]}' in bond_pairs_1) and (bo_sig_pair > 0 and 0 > bo_pi_pair and 0 > bo_sig_pair + bo_pi_pair):
+        corrections = 2
     else:
         corrections = 2
     return corrections
